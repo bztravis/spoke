@@ -7,13 +7,10 @@ export const metadata = {
 
 export default function LandingPage() {
   return (
-    <main>
+    <div>
       <nav className='flex flex-row justify-center items-center px-6 md:px-12 h-24'>
         <div className='w-full max-w-screen-2xl flex flex-row justify-between items-center bg-slate-400 text-lg'>
-          <div className=''>
-            <WordmarkMd />
-          </div>
-
+          <WordmarkMd />
           <div className='flex flex-row items-center gap-4 md:gap-12'>
             <Link href='/pricing'>Join</Link>
             <Link href='/pricing'>Pricing</Link>
@@ -23,7 +20,13 @@ export default function LandingPage() {
           </div>
         </div>
       </nav>
-      Welcome to Spoke
-    </main>
+      <main>
+        <div className='flex flex-row justify-center items-center h-96'>
+          <h1 className='max-w-[960px] text-center text-7xl font-semibold tracking-tight'>
+            Understand, engage, and connect your audience.
+          </h1>
+        </div>
+      </main>
+    </div>
   );
 }
