@@ -7,11 +7,11 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      tangerine500: '#FFA842',
-      azule200: '#DDE9FF',
-    },
     extend: {
+      colors: {
+        tangerine500: '#FFA842',
+        azule200: '#DDE9FF',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
