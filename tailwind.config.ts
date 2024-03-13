@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       tangerine500: '#FFA842',
+      azule200: '#DDE9FF',
     },
     extend: {
       backgroundImage: {
