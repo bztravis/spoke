@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import WordmarkMd from '@/public/icons/wordmarkMd.svg';
-import IconL from '@/public/icons/iconL.svg';
 
 export const metadata = {
   title: 'Spoke: Understand, engage, and connect your audience',

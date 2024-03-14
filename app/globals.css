@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+:root {
   color: #202020;
 }
