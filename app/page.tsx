@@ -32,7 +32,7 @@ export default function LandingPage() {
             </h1>
             <p className='text-gray-500 text-center'>
               Track attendance, pose live polls, and host live chat for
-              participants
+              participants.
             </p>
           </div>
           <div className='flex flex-col gap-8 items-center'>
