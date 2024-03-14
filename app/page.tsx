@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import WordmarkMd from '@/public/icons/wordmarkMd.svg';
+import IconL from '@/public/icons/iconL.svg';
 
 export const metadata = {
   title: 'Spoke: Understand, engage, and connect your audience',
@@ -12,8 +13,12 @@ export default function LandingPage() {
         <div className='w-full max-w-screen-2xl flex flex-row justify-between items-center text-md'>
           <WordmarkMd />
           <div className='flex flex-row items-center gap-6 md:gap-8'>
-            <Link href='/pricing'>Features</Link>
-            <Link href='/pricing'>Pricing</Link>
+            <Link href='/pricing' className='hidden md:block'>
+              Features
+            </Link>
+            <Link href='/pricing' className='hidden md:block'>
+              Pricing
+            </Link>
             <button className='px-6 py-2 rounded bg-gray-200 font-medium'>
               Sign In
             </button>
@@ -21,8 +26,8 @@ export default function LandingPage() {
         </div>
       </nav>
       <main>
-        <div className='flex flex-col justify-center items-center gap-24 h-[550px] md:h-[640px] text-xl'>
-          <div className='flex flex-col items-center gap-8 px-8'>
+        <div className='flex flex-col justify-center items-center gap-24 h-[450px] md:h-[640px] text-xl'>
+          <div className='flex flex-col items-center gap-8 px-4 md:px-8'>
             <h1 className='max-w-[960px] text-center text-4xl lg:text-7xl font-semibold tracking-tight'>
               Understand, engage, and connect your audience.
             </h1>
