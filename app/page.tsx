@@ -10,7 +10,9 @@ export default function LandingPage() {
     <div>
       <nav className='flex flex-row justify-center items-center px-6 md:px-12 h-28'>
         <div className='w-full max-w-screen-2xl flex flex-row justify-between items-center text-md'>
-          <WordmarkMd />
+          <Link href='/'>
+            <WordmarkMd />
+          </Link>
           <div className='flex flex-row items-center gap-6 md:gap-8'>
             <Link href='/#features' className='hidden md:block'>
               Features
@@ -18,9 +20,11 @@ export default function LandingPage() {
             <Link href='/#pricing' className='hidden md:block'>
               Pricing
             </Link>
-            <button className='px-6 py-2 rounded bg-gray-200 font-medium'>
-              Sign In
-            </button>
+            <Link href='/signin'>
+              <button className='px-6 py-2 rounded bg-gray-200 font-medium'>
+                Sign In
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -36,16 +40,19 @@ export default function LandingPage() {
             </p>
           </div>
           <div className='flex flex-col gap-8 items-center'>
-            <div className='flex flex-row gap-2 p-2 md:w-[500px] h-20 border-2 border-gray-200 rounded'>
-              <input
-                type='text'
-                placeholder='Enter your event code'
-                className='p-2 grow bg-transparent focus:outline-none'
-              />
-              <button className='px-8 py-2 rounded bg-tangerine500 font-medium'>
-                Join
-              </button>
-            </div>
+            <form>
+              <div className='flex flex-row gap-2 p-2 md:w-[500px] h-20 border-2 border-gray-200 rounded'>
+                <input
+                  type='text'
+                  placeholder='Enter your event code'
+                  required
+                  className='p-2 grow bg-transparent focus:outline-none'
+                />
+                <button className='px-8 py-2 rounded bg-tangerine500 font-medium'>
+                  Join
+                </button>
+              </div>
+            </form>
             <span className='flex gap-4 text-xl'>
               <p className='inline'>Organizing an event?</p>
               <Link href='/signin' className='underline text-gray-500'>
