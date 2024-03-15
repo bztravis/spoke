@@ -12,10 +12,10 @@ export default function LandingPage() {
         <div className='w-full max-w-screen-2xl flex flex-row justify-between items-center text-md'>
           <WordmarkMd />
           <div className='flex flex-row items-center gap-6 md:gap-8'>
-            <Link href='/pricing' className='hidden md:block'>
+            <Link href='/#features' className='hidden md:block'>
               Features
             </Link>
-            <Link href='/pricing' className='hidden md:block'>
+            <Link href='/#pricing' className='hidden md:block'>
               Pricing
             </Link>
             <button className='px-6 py-2 rounded bg-gray-200 font-medium'>
